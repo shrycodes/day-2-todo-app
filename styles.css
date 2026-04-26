@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: monospace;
+    color:  #c084fc;
+    margin: 2rem;
+}
+
+.inputElement {
+    background-color: rgb(45, 43, 43);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    color: rgb(242, 234, 246);
+}
+
+.button {
+    background-color: rgb(45, 43, 43);
+    border: none;
+    color: beige;
+    padding: 0.5rem;
+    border-radius: 1rem; 
+    margin: 0.1rem;
+    cursor: pointer;
+}
+
+.errorMsg {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.errorBorder {
+    border: 2px solid red
+}
+
+.deleteBtn {
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.deleteBtn:hover{
+    background: darkred;
+    transform: scale(1.05)
+}
+
+.taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+    padding: 8px;
+    color: white;
+}
+
+.done span{
+    text-decoration: line-through;
+    opacity: 0.6;
+} 
+
+.fade-out{
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.4s ease;
+}
+
+li {
+    display: flex;
+}
+
+.allBtn, .doneBtn, .pendingBtn{
+    border: none;
+    color: white;
+    background-color: rgb(161, 53, 161);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
